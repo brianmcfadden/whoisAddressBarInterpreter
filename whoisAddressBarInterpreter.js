@@ -2,12 +2,12 @@
 // type in to firefox address bar: "whois bob.com"
 // this script converts from
 // https://www.google.com/search?client=ubuntu&channel=fs&q=whois+bob.com&ie=utf-8&oe=utf-8
-// to
-// http://whois.domaintools.com/bob.com
+// to some other helpful information provider, preferably one that doesn't captcha or
+// limit requests
 
 var pattern="https://www.google.com/search?client=ubuntu&channel=fs&q=whois+*";
 
-var whoisPrefix = "http://whois.domaintools.com/";
+var whoisPrefix = "https://mxtoolbox.com/SuperTool.aspx?action=whois%3a";
 
 function redirect(requestDetails) {
   var str = requestDetails.url;
