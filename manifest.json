@@ -12,6 +12,6 @@
 
 
   "background": {
-    "scripts": [ "background.js" ]
+    "scripts": [ "whoisAddressBarInterpreter.js" ]
   }
 }
