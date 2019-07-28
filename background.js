@@ -7,16 +7,12 @@
 
 var pattern="https://www.google.com/search?client=ubuntu&channel=fs&q=whois+*";
 
-// var whoisPrefix = "https://whois.icann.org/en/lookup?name=";
 var whoisPrefix = "http://whois.domaintools.com/";
 
 function redirect(requestDetails) {
-  console.log("Loading: " + requestDetails.url);
   var str = requestDetails.url;
   var domain = str.replace("https://www.google.com/search?client=ubuntu&channel=fs&q=whois+", "").replace("&ie=utf-8&oe=utf-8","");
-  console.log("Domain: " + domain);
   var newUrl = whoisPrefix + domain;
-  console.log("New URL: " + newUrl);
   return {
     redirectUrl: newUrl
   };
