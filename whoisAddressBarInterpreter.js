@@ -5,7 +5,7 @@
 // to some other helpful information provider, preferably one that doesn't captcha or
 // limit requests
 
-var pattern="https://www.google.com/search?client=ubuntu&channel=fs&q=whois+*";
+var pattern="https://www.google.com/search?client=*&q=whois+*";
 
 var whoisPrefix = "https://mxtoolbox.com/SuperTool.aspx?action=whois%3a";
 
